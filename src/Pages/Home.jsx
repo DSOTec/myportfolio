@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
   return (
     <>
-      <div className="pl-[5%] pr-[5%]">
+      <div className="pl-[5%] pr-[5%] pb-[4%]">
         <div className="flex flex-col-reverse md:flex-row justify-between items-center">
           {/* Text Section */}
           <motion.div

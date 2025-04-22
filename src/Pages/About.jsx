@@ -2,18 +2,23 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="px-6 md:px-16 py-8 bg-gray-50">
+    <div className="px-6 pb-[4%] md:px-16 py-8 bg-gray-50">
       {/* About Me Section */}
       <div className="mb-12">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">About Me</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#0077B8] mb-4">About Me</h1>
         <p className="text-gray-600 text-lg leading-relaxed">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Hello! I'm Samuel Daniel, a passionate frontend developer with a knack for creating clean, efficient, and user-friendly web applications. 
+          With a strong foundation in modern web technologies, I specialize in turning ideas into visually appealing and functional digital experiences.
+        </p>
+        <p className="text-gray-600 text-lg leading-relaxed mt-4">
+          I thrive on solving complex problems and continuously learning new tools and techniques to stay ahead in the ever-evolving tech landscape. 
+          Whether it's building responsive websites, optimizing performance, or collaborating with teams, I bring dedication and creativity to every project.
         </p>
       </div>
 
       {/* Work Experience Section */}
       <div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Work Experience</h1>
+        <h1 className="text-3xl md:text-4xl font-bold text-[#0077B8] mb-6">Work Experience</h1>
 
         <div className="space-y-8">
           {/* Job 1 */}

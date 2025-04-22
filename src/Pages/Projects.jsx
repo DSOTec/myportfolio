@@ -5,20 +5,20 @@ const Projects = () => {
     {
       title: 'Portfolio Website',
       description: 'A personal portfolio website to showcase my skills and projects.',
-      link: 'https://github.com/DSOTec/portfolio',
-      image: 'https://via.placeholder.com/300', // Replace with your project image
+      link: 'https://myportfolio-khaki-three.vercel.app/',
+      image: 'https://dribbble.com/shots/3635258-Front-end-Developer-s-Portfolio', 
     },
     {
-      title: 'E-commerce App',
-      description: 'A fully responsive e-commerce application with payment integration.',
-      link: 'https://github.com/DSOTec/ecommerce-app',
-      image: 'https://via.placeholder.com/300', // Replace with your project image
+      title: 'Fitness Tracker App',
+      description: 'A app used to track the consistency of exercise.',
+      link: 'https://fit-tracker-lyart.vercel.app/',
+      image: 'https://fit-tracker-lyart.vercel.app/assets/image-DGKJeFUd.jpg', 
     },
     {
-      title: 'Weather App',
-      description: 'A weather forecasting app using OpenWeatherMap API.',
-      link: 'https://github.com/DSOTec/weather-app',
-      image: 'https://via.placeholder.com/300', // Replace with your project image
+      title: 'CJOS BOT',
+      description: 'A AI assistant which gives answer to diverse kind of questions.',
+      link: 'https://cjos-bot.vercel.app/',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGoA-f2ql_wgamkMarBmEKpz8I1oO4Z61-ewqFUqD2K3_LCh2jx-zN6No&s',
     },
   ];
 

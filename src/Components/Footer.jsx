@@ -5,7 +5,7 @@ import x from '../assets/Navbar/twitter-brands.svg';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
+    <footer className="bg-[#0077B8] text-white  py-6">
       <div className="container mx-auto px-6 md:px-16 text-center">
         {/* Social Media Links */}
         <div className="flex justify-center space-x-6 mb-4">

@@ -8,11 +8,11 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="pt-4 px-6 md:px-16">
+    <header className="pl-[5%] pr[5%] pt-[3%] pb-4 px-6 md:px-16">
       <div className="flex justify-between items-center">
         {/* Logo Section */}
         <div>
-          <Link to="/" className="text-[#0077B8] text-[1.5rem] font-bold font-[Poppins]">
+          <Link to="/" className="text-[#0077B8] text-[1.5rem] underline font-bold font-[Poppins]">
             Samuel Daniel
           </Link>
         </div>
@@ -56,13 +56,13 @@ const Header = () => {
         {/* Social Media Links */}
         <div className="hidden md:flex space-x-4">
           <Link to="https://github.com/DSOTec" target="_blank" rel="noopener noreferrer">
-            <img className="w-[30px] md:w-[40px]" src={github} alt="GitHub" />
+            <img className="w-[20px] md:w-[30px]" src={github} alt="GitHub" />
           </Link>
           <Link to="https://www.linkedin.com/in/dsotec" target="_blank" rel="noopener noreferrer">
-            <img className="w-[30px] md:w-[40px]" src={linkedin} alt="LinkedIn" />
+            <img className="w-[20px] md:w-[30px]" src={linkedin} alt="LinkedIn" />
           </Link>
           <Link to="https://x.com/DanielSamuelO3" target="_blank" rel="noopener noreferrer">
-            <img className="w-[30px] md:w-[40px]" src={x} alt="Twitter" />
+            <img className="w-[20px] md:w-[30px]" src={x} alt="Twitter" />
           </Link>
         </div>
       </div>

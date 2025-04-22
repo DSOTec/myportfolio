@@ -1,39 +1,46 @@
-import React from "react"
-import logo from '../assets/Navbar/DSlogobg.png'
-import github from '../assets/Navbar/github-brands.svg'
-import linkedin from '../assets/Navbar/linkedin-brands.svg'
-import x from '../assets/Navbar/twitter-brands.svg'
-import { Link } from "react-router-dom"
-
+import React from "react";
+import github from '../assets/Navbar/github-brands.svg';
+import linkedin from '../assets/Navbar/linkedin-brands.svg';
+import x from '../assets/Navbar/twitter-brands.svg';
+import { Link } from "react-router-dom";
 
 const Header = () => {
-
   return (
-    <>
-    <div className="pl-[4%] pr-[4%]">
-    <div className=" flex justify-between items-center py-2 md:py-10">
-        <div>
-           <Link className="text-[#0077B8] text-[20px] underline font-[Poppins]" to=''> Samuel Daniel </Link>
+    <header className="pt-[3%] pl-[5%] pr-[5%] pb-[4%] py-4 md:py-8-md">
+      <div className="flex flex-col md:flex-row justify-between items-center">
+        {/* Logo Section */}
+        <div className="mb-4 md:mb-0">
+          <Link to="/" className="text-[#0077B8] text-[1.5rem] underline font-bold font-[Poppins]">
+            Samuel Daniel
+          </Link>
         </div>
-        <div className="">
-            <ul className="dark:text-light-content font-medium md:flex items-center md:space-x-5 md:mr-10">
-            <li><Link to='/'> Home </Link></li>
-            <li><Link to='About' > About</Link></li>
-            <li><Link to='Technologies'>Technologies</Link></li>
-            <li><Link to='Projects'>Projects</Link></li>
-            <li><Link to='Contact'>Contact</Link></li>
-            </ul>    
-        </div>
-        <div className="flex justify-evenly items-center my-5 md:my-0 md:space-x-5 md:mr-5">
-           <Link to="https://github.com/DSOTec" ><img className="w-[50px]" src={github} alt="github" /> </Link>
-           <Link to="https://www.linkedin.com/in/dsotec"> <img className="w-[50px]"  src={linkedin} alt="linkedin" /></Link>
-           <Link to="https://x.com/DanielSamuelO3"><img className="w-[50px]" src={x} alt="x" /></Link>
-        </div>
-    </div>
-    </div>
-  
-    </>
-  )
-}
 
-export default Header
+        {/* Navigation Links */}
+        <nav className="mb-4 md:mb-0">
+          <ul className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6 text-gray-700 font-medium">
+            <li><Link to="/" className="hover:text-[#0077B8]">Home</Link></li>
+            <li><Link to="/About" className="hover:text-[#0077B8]">About</Link></li>
+            <li><Link to="/Technologies" className="hover:text-[#0077B8]">Technologies</Link></li>
+            <li><Link to="/Projects" className="hover:text-[#0077B8]">Projects</Link></li>
+            <li><Link to="/Contact" className="hover:text-[#0077B8]">Contact</Link></li>
+          </ul>
+        </nav>
+
+        {/* Social Media Links */}
+        <div className="flex space-x-4">
+          <Link to="https://github.com/DSOTec" target="_blank" rel="noopener noreferrer">
+            <img className="w-[30px] md:w-[40px]" src={github} alt="GitHub" />
+          </Link>
+          <Link to="https://www.linkedin.com/in/dsotec" target="_blank" rel="noopener noreferrer">
+            <img className="w-[30px] md:w-[40px]" src={linkedin} alt="LinkedIn" />
+          </Link>
+          <Link to="https://x.com/DanielSamuelO3" target="_blank" rel="noopener noreferrer">
+            <img className="w-[30px] md:w-[40px]" src={x} alt="Twitter" />
+          </Link>
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
